@@ -1,0 +1,14 @@
+name: Install telnet
+  ansible.builtin.package:
+    name: telnet
+    state: present
+    
+    name: Install dstat
+  ansible.builtin.package:
+    name: dstat
+    state: present
+    
+    name: Install gimp
+  ansible.builtin.package:
+    name: gimp
+    state: present
