@@ -1,6 +1,5 @@
 ---
-- name: Stop service httpd, if started
-  hosts: all
-  ansible.builtin.service:
-    name: httpd
-    state: stopped
+   - name: STOP a service with systemd
+      systemd:
+        name: httpd
+        state: stopped
