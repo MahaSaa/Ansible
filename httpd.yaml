@@ -1,5 +1,8 @@
 ---
-   - name: STOP a service with systemd
+- name: SSH start service
+  hosts: all
+  tasks:
+    - name: STOP a service with systemd
       systemd:
-        name: httpd
+        name: cups
         state: stopped
