@@ -1,0 +1,8 @@
+---
+- name: Ansible stop service
+  hosts: all
+  tasks:
+    - name: Stop a service with systemd
+      systemd:
+        name: firewalld
+        state: stopped
